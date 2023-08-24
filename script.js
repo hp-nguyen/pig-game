@@ -53,7 +53,7 @@ btnRoll.addEventListener('click', function () {
     let randomDice = Math.trunc(Math.random() * 6) + 1;
     // 2. Display dice
     diceEl.classList.remove('hidden');
-    diceEl.src = `dice-${randomDice}.png`;
+    diceEl.src = `./images/dice-${randomDice}.png`;
     // 3. Check if dice === 1 => switch player & reset current score, if dice !== 1 add dice roll to current score
     // When dice === 1
     if (randomDice === 1) {
